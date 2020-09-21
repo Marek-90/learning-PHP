@@ -8,7 +8,8 @@
 <body>
     <?php
     echo "<h1>Hello World!</h1>";
-    echo "to jest następne zdanie";
+    echo "to jest następne zdanie<br />\n";
+    echo "to jest następne zdanie<br />\n";
     ?>
 </body>
 </html>
