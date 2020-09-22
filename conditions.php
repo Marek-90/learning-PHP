@@ -39,13 +39,18 @@
         echo "dodatkowo num3 jest tego samego typu co num4"; 
         
     }
+    echo "<br/>";
+
     echo "<br/>-------------- // --------------<br/>";
+    echo "<br/>";
 
     if(15 > 7 && 2 < 19)
         echo "prawda";
-
+        
+        echo "<br/>";
 
         echo "<br/>-------------- / Switch / --------------<br/>";
+        echo "<br/>";
 
         $a = 50;
 
@@ -63,8 +68,27 @@
             default;
                 echo "a na pewno nie jest równe 0, 25, 50";
         }
+        echo "<br/>";
 
-        
+        echo "<br/>-------------- / Operator warunkowy / --------------<br/>";
+
+        echo "<br/>";
+
+        $number1 = 20;
+        $number2 = 100;
+
+        $message = ($number1 > $number2) ? "number1 jest większe od number2" : "number1 jest mniejszy, bądź równy number2";
+
+        echo $message;
+
+        echo "<br/>";
+        echo "<br/>-------------- // --------------<br/>";
+        echo "<br/>";
+
+        $isGreenChecked = true;
+
+        echo "<input type='checkbox' name='color' value='green' ".($isGreenChecked ? "checked" : " ")." /> Green<br/>";
+
     ?>
 </body>
 </html>
