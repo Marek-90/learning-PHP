@@ -44,6 +44,26 @@
     if(15 > 7 && 2 < 19)
         echo "prawda";
 
+
+        echo "<br/>-------------- / Switch / --------------<br/>";
+
+        $a = 50;
+
+        switch($a)
+        {
+            case 0;
+                echo "a jest równe 0";
+                break;  
+            case 25; 
+                echo "a jest równe 25";
+                break;
+            case 50;
+                echo "a jest równe 50";
+                break;
+            default;
+                echo "a na pewno nie jest równe 0, 25, 50";
+        }
+
         
     ?>
 </body>
