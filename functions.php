@@ -41,7 +41,7 @@
         $var1 = 10;
         $var2 = 20;
 
-        function changeValue(&$valueToChange, $value) // przesyłanie przez referencje poprzez "&"
+        function changeValue(&$valueToChange, $value) // przesyłanie przez referencje za pomocą "&"
         {
             $valueToChange = $value;
         }
