@@ -30,6 +30,8 @@
                 
             }
         }
+        else
+        include("start.html");
        
 
         echo "<br/>---------//---------<br/>";
