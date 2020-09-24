@@ -8,9 +8,9 @@
 <body>
 <div class="container">
     <div class="menu">
-        <div><a href="?page=Java">Java</a></div>
+        <div><a href="?page=java">Java</a></div>
         <div><a href="?page=php">PHP</a></div>
-        <div><a href="?page=MySql">MySql</a></div>
+        <div><a href="?page=mysql">MySql</a></div>
     </div>
     <div class="container">
     <?php
