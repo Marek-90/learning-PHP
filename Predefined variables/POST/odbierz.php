@@ -13,7 +13,16 @@
     {
         if(!empty($_POST['login']) && !empty($_POST['hasło']))
         {
-            filter_var($_POST['login'], FILTER_SANITIZE_STRING);
+          $login =  filter_var($_POST['login'], FILTER_SANITIZE_STRING);
+          $password = filter_var($_POST['hasło'], FILTER_SANITIZE_STRING);
+
+          if($login == "" && $password == "")
+          {
+              echo "Gratulacje zalogowałeś się na konto: ".$login;
+              echo "PANEL ADMINISTRACYJNY";
+          }
+          else
+          echo "Nie podałeś loginu lub hasła. Spróbuj ponownie <a href='index.php'>tutaj</a>";
         }
         else
         echo "Nie podałeś loginu lub hasła. Spróbuj ponownie <a href='index.php'>tutaj</a>";
