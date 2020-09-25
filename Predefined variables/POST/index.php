@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="odbierz.php" method="post" enctype="multipart/form-data">
         <div>
             <div>
                 Login: <input tyle:"text" name="login" maxlength="8" size="5">
