@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<?php
+session_start(); // $_SESSION['nzawa'] = wartość;
+
+
+?>
+
 <html lang="en">
 
 <head>
@@ -18,8 +25,8 @@
 
           if($login == "" && $password == "")
           {
-              echo "Gratulacje zalogowałeś się na konto: ".$login;
-              echo "PANEL ADMINISTRACYJNY";
+              echo "Gratulacje zalogowałeś się na konto: ".$login."<br/>";
+              echo "PANEL ADMINISTRACYJNY <br/>";
           }
           else
           echo "Nie podałeś loginu lub hasła. Spróbuj ponownie <a href='index.php'>tutaj</a>";
