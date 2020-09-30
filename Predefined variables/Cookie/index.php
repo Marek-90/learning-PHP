@@ -2,19 +2,16 @@
 <?php
     session_start(); //$_SESSION['nazwa'] = wartosc;
 
-    if(isset ($_GET['ref']))
+    if(isset($_GET['ref']))
     {
         $ref = filter_var($_GET['ref'], FILTER_SANITIZE_STRING);
-
-        if(!isset($_COOKIE['ref']))
-        setcookie("ref", $ref, time()+60*60*24*30*3);
+        
+        if (!isset($_COOKIE['ref']))
+        {
+            $_COOKIE['ref'] = $ref;
+            setcookie("ref", $ref, time()+60*60*24*30*3, "/");
+        }
     }
-  
-    $_COOKIE['ref'] = "Waldek";
-    setcookie("ref", "Waldek", time()+60*60*24*30*3);
-
-
-
     if (!isset($_SESSION['initiate']))
     {
         session_regenerate_id();
@@ -24,7 +21,12 @@
         session_start();        
         $_SESSION['initiate'] = 1;
     }
-    ob_start(); //output bufforing start
+    /*
+    $_COOKIE['ref'] = "inna_wartosc";
+    setcookie("ref", "inna_wartosc", time()+60*60*24*30*3);
+     // ZMIANA WARTOSCI
+     */
+    ob_start(); //output_buffering start
 ?>
 
 <html>
