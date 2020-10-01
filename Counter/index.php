@@ -11,7 +11,7 @@
     <?php
     
     $nameFile = "test.txt";
-    $indicator = @fopen($nameFile, "r+"); //fopepn - wskaźnik do pliku
+    $indicator = @fopen($nameFile, "r+"); 
 
     if($indicator)
     {
@@ -21,11 +21,13 @@
         rewind($indicator);
         fwrite($indicator, $counter);
     }
+    else
+        echo "Nie ma takiego pliku";
 
-    echo "Nie ma takiego pliku";
-
+        
     @fclose($indicator)
 
+    //fopepn - wskaźnik do pliku
     ?>
 </body>
 
