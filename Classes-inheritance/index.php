@@ -9,8 +9,7 @@
 
 <body>
     <?php
-    require_once("Point.php");
-    require_once("Point2D.php");
+    require_once("Point3D.php");
 
     // $p = new Point(40);
     
