@@ -10,10 +10,17 @@
 <body>
     <?php
     require_once("Point.php");
+    require_once("Point2D.php");
 
-    $p = new Point(40);
+    // $p = new Point(40);
+    
+    // echo $p->x."<br/>";
+    
+    $p2 = new Point2D(10, 50);
+    $p2->setX(70);
 
-    echo $p->x."<br/>";
+    echo $p2->getX()."<br/>";
+    echo $p2->getY()."<br/>";
 
     ?>
 </body>
